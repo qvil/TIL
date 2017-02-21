@@ -6,6 +6,7 @@
 * Reactjs code snippets // 설명이 필요있나 rcc tab!
 * View In Browser // Ctrl + F1
 * Debugger for Chrome // line number 옆에 클릭하면 debug break point
+* Project Manager // F1 -> project * //list = shift+alt+p
 * HTML
   * HTML Snippets
   * HTML CSS Class Completion
