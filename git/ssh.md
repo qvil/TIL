@@ -21,13 +21,11 @@ github페이지의 Settings -> SSH Key -> New SSH Key -> Key 항목에 id_rsa.pu
 ```
 
 ### github remote 저장소에 ssh 사용 url add하거나 clone
-git@github.com:{id}/{project}.git
+`git@github.com:{id}/{project}.git`
 ```shell
 git remote add {name} git@github.com:{id}/{project}.git
 git clone git@github.com:{id}/{project}.git
 ```
 
 ### 참고
-```
-https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
-```
+- [Generating a new SSH key and adding it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
