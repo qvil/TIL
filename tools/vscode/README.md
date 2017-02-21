@@ -4,8 +4,14 @@
 ## Extensions
 * Atom Keymap // Awesome!!! atom -> vscode
 * Reactjs code snippets // 설명이 필요있나 rcc tab!
+* View In Browser // Ctrl + F1
+* Debugger for Chrome // line number 옆에 클릭하면 debug break point
+* HTML
+  * HTML Snippets
+  * HTML CSS Class Completion
 * jshint
 * ESLint
+* Git History // F1 -> View History(git log)
 
 ## Own Snippets(파일->기본설정->사용자 코드조각)
 
