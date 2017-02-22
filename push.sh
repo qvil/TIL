@@ -1,4 +1,5 @@
+date=`date`;
 cp -f README.md Home.md;
 git add .;
-git ci -m "[TS Auto Script] Combined README.md and Home.md";
+git ci -m "[TS Auto Push Script] $date";
 git push ssh master;
