@@ -1,5 +1,5 @@
 # VS CODE(Visual Studio Code)
-역시 MS인가 Type Script도 배워보고 싶을 정도로 VSCode는 정말 굉장하다..
+[Issue](http://localhost:4567/preview#vs-code-visual-studio-code_issue)
 
 ## 단축키
 - F12 // Go To Declaration 선언한 곳으로 찾아가줌. ctags 처럼도 이용 가능(C/C++ 확장프로그램 설치)
@@ -25,6 +25,10 @@
 
 
 ## Extensions
+**Settings Sync** // 모든 셋팅, 확장프로그램을 여러 장치에서 같은 셋팅으로 쓰게 해준다 꼭 깔자!!
+
+***
+
 * Atom Keymap // Awesome!!! atom -> vscode
 * Reactjs code snippets // 설명이 필요있나 rcc tab!
 * View In Browser // Ctrl + F1
@@ -60,3 +64,6 @@
 	}
 }
 ```
+
+## Issue
+- Settings Sync - Download 안될 때 : sync -> Advanced option -> Share Settings With Public GIST -> GIST를 다른 장치에서 사용(임시)
