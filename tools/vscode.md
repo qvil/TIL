@@ -1,5 +1,5 @@
 # VS CODE(Visual Studio Code)
-[Issue](http://localhost:4567/preview#vs-code-visual-studio-code_issue)
+[Issue](https://github.com/qvil/TIL/blob/master/tools/vscode.md#issue)
 
 ## 단축키
 - F12 // Go To Declaration 선언한 곳으로 찾아가줌. ctags 처럼도 이용 가능(C/C++ 확장프로그램 설치)
