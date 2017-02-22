@@ -8,6 +8,13 @@
 - Alt + <- // 이전에 보던 라인, undo랑 비슷
 - Alt + -> // 다음에 본 라인, redo랑 비슷
 
+## 설정
+
+- 파일
+  + 기본설정 
+    * 색 테마 - monokai
+    * 파일 아이콘 테마 - file icons
+
 ## Extensions
 * Atom Keymap // Awesome!!! atom -> vscode
 * Reactjs code snippets // 설명이 필요있나 rcc tab!
