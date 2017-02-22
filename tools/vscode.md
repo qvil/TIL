@@ -15,7 +15,7 @@
 - 파일
   + 기본설정 
     * 색 테마 - monokai
-    * 파일 아이콘 테마 - file icons
+    * 파일 아이콘 테마 - **vscode-icons**, file icons
 
 ### 로컬  vscode powershell에서 서버의 코드를 github에 ssh로 push하기
 [github username, password 없이 ssh key로 push하기](https://github.com/qvil/TIL/blob/master/git/ssh.md#github-username-password-없이-ssh-key로-push하기)
