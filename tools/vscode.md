@@ -49,18 +49,51 @@
 	"Print to console": {
 		"prefix": "log",
 		"body": [
-			"console.log('$1');",
-			"$2"
+			"console.log('$1');"
 		],
 		"description": "Log output to console"
 	},
 	"TS Console Log": {
 		"prefix": "tlg",
 		"body": [
-			"console.log('[TS_LOG] $1 : ' + $1);",
-			"$2"
+			"console.log('[TS_LOG] $1 : ' + $1);"
 		],
 		"description": "Log output to console"
+	},
+	"[React-Native]Stateless Component": {
+		"prefix": "rnsc",
+		"body": [
+			"import { View } from 'react-native';",
+			"",
+			"const ${1:MyComponent} = () => (",
+			"	<View></View>",
+			");",
+			"",
+			"export default ${1:MyComponent};"
+		],
+		"description": "[React-Native]Stateless Component"
+	},
+	"[React-Native]Class": {
+		"prefix": "rnc",
+		"body": [
+			"import React, { Component } from 'react';",
+			"import { Text } from 'react-native';",
+			"",
+			"class ${1:MyComponent} extends Component {",
+			"	constructor(props) {",
+			"	super(props);",
+			"	}",
+			"",
+			"	render() {",
+			"		return(",
+			"			<Text>${1:MyComponent}</Text>",
+			"		);",
+			"	}",
+			"}",
+			"",
+			"export default ${1:MyComponent};"
+		],
+		"description": "[React-Native]Class Component"
 	}
 }
 ```
