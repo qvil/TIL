@@ -39,6 +39,7 @@ $ docker restart local_build_test
 ```shell
 $ docker kill local_build
 $ docker rm -f local_build_test
+$ docker rmi ba160e55dd9f
 ```
 
 ### Export
