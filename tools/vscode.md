@@ -98,5 +98,19 @@
 }
 ```
 
+## 바로가기 키(파일->기본설정-> 키)
+
+### keybindings.json
+
+```json
+// Empty
+[
+{ "key": "cmd+y",           "command": "redo",
+"when": "editorTextFocus && !editorReadonly" },
+{ "key": "ctrl+shift+left",                "command": "workbench.action.navigateBack" },
+{ "key": "ctrl+shift+right",          "command": "workbench.action.navigateForward" }
+]
+```
+
 ## Issue
 - Settings Sync - Download 안될 때 : sync -> Advanced option -> Share Settings With Public GIST -> GIST를 다른 장치에서 사용(임시)
