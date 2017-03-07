@@ -63,6 +63,7 @@
 	"[React-Native]Stateless Component": {
 		"prefix": "rnsc",
 		"body": [
+                        "import React, { Component } from 'react';",
 			"import { View } from 'react-native';",
 			"",
 			"const ${1:MyComponent} = () => (",
