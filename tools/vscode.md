@@ -29,6 +29,7 @@
 
 ***
 
+* Auto-Open Markdown Preview // TIL처럼 markdown 언어가 에디터에서 preview된다.
 * Atom Keymap // Awesome!!! atom -> vscode
 * Reactjs code snippets // 설명이 필요있나 rcc tab!
 * View In Browser // Ctrl + F1
