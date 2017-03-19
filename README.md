@@ -19,6 +19,10 @@
 
 ## 로컬에서 사용
 
+### gollum
+
+**Deprecated**
+
 - 리눅스(우분투)에 ruby 깔고 gollum 깔고
 - git clone TIL
   + [Use HTTPS](https://github.com/qvil/TIL.git) `https://github.com/qvil/TIL.git`
@@ -29,3 +33,9 @@ $ cd TIL gollum
 $ gollum
 ```
 - 브라우저에서 [localhost:4567](http://localhost:4567) 접속
+
+### VSCode
+
+**Recommended**
+
+Auto-Open Markdown Preview 이용해서 수정하고 바로 커밋찍는게 짱임.
