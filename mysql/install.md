@@ -22,10 +22,14 @@ mac
 ```
 
 ### 5.7 버전 미만
->UPDATE mysql.user SET password=PASSWORD('패스워드') WHERE user='root'; 
->FLUSH PRIVILEGES; 
->quit
+```
+UPDATE mysql.user SET password=PASSWORD('패스워드') WHERE user='root';
+FLUSH PRIVILEGES; 
+quit
+```
 ### 5.7 버전 이상
->UPDATE mysql.user SET authentication_string=PASSWORD('패스워드') WHERE user='root'; 
->FLUSH PRIVILEGES;
->quit
+```
+UPDATE mysql.user SET authentication_string=PASSWORD('패스워드') WHERE user='root'; 
+FLUSH PRIVILEGES;
+quit
+```
