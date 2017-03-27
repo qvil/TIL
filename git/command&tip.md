@@ -53,3 +53,27 @@ $ git tag -a v1.4 -m 'my version 1.4'
 ```shell
 $ git tag v1.4-lw
 ```
+
+## 여러줄로 Commit
+
+1. VSCode같은 에디터 이용하거나
+2. 명령줄에서 "를 시작하고 닫지 않고 엔터입력
+
+```
+$ git commit -m "
+> Commit
+> OK
+> "
+```
+
+## Log
+
+[6.4 Git 도구 - 히스토리 단장하기](https://git-scm.com/book/ko/v1/Git-도구-히스토리-단장하기)
+
+### 마지막 커밋 수정
+
+자동으로 텍스트 편집기 실행됨.
+
+```shell
+$ git commit --amend
+```
