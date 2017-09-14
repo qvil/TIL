@@ -1,0 +1,372 @@
+
+<!DOCTYPE HTML>
+<html lang="kr, en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Command & Tip · TIL</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="Taesu Hyeon">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="commit-convention.html" />
+    
+    
+    <link rel="prev" href="alias.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">TIL</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Git</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="alias.html">
+            
+                <a href="alias.html">
+            
+                    
+                    Alias
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="command&tip.html">
+            
+                <a href="command&tip.html">
+            
+                    
+                    Command & Tip
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="commit-convention.html">
+            
+                <a href="commit-convention.html">
+            
+                    
+                    Commit Convention
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="ssh.html">
+            
+                <a href="ssh.html">
+            
+                    
+                    SSH
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Javascript</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../javascript/callback.html">
+            
+                <a href="../javascript/callback.html">
+            
+                    
+                    Callback
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../javascript/curring.html">
+            
+                <a href="../javascript/curring.html">
+            
+                    
+                    Curring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Command & Tip</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="command">Command</h1>
+<h2 id="&#xBE0C;&#xB79C;&#xCE58;&#xC5D0;&#xC11C;-&#xD2B9;&#xC815;&#xD30C;&#xC77C;-patch">&#xBE0C;&#xB79C;&#xCE58;&#xC5D0;&#xC11C; &#xD2B9;&#xC815;&#xD30C;&#xC77C; patch</h2>
+<p>&#xD2B9;&#xC815; branch&#xC5D0;&#xC11C; &#xD2B9;&#xC815; &#xD30C;&#xC77C; &#xD639;&#xC740; &#xD3F4;&#xB354;&#xB9CC; Update&#xD558;&#xACE0; &#xC2F6;&#xC744; &#xB54C;</p>
+<pre><code class="lang-shell">$ git checkout --patch {bracnh} {file or folder}
+</code></pre>
+<h2 id="&#xB85C;&#xCEEC;-&#xBE0C;&#xB79C;&#xCE58;-&#xC0AD;&#xC81C;">&#xB85C;&#xCEEC; &#xBE0C;&#xB79C;&#xCE58; &#xC0AD;&#xC81C;</h2>
+<pre><code class="lang-shell">$ git branch -d {branch_name} # merge &#xD6C4; &#xC4F8;&#xBAA8;&#xC5C6;&#xB294; &#xBE0C;&#xB79C;&#xCE58;&#xB9CC; &#xC0AD;&#xC81C;&#xB428;
+$ git branch -D {branch_name} # &#xAC15;&#xC81C;&#xB85C; &#xC0AD;&#xC81C; &#xAC00;&#xB2A5;
+</code></pre>
+<h2 id="&#xC6D0;&#xACA9;-&#xBE0C;&#xB79C;&#xCE58;-&#xC0AD;&#xC81C;">&#xC6D0;&#xACA9; &#xBE0C;&#xB79C;&#xCE58; &#xC0AD;&#xC81C;</h2>
+<p><strong>checkout &#xC548;&#xD558;&#xACE0; &#xD574;&#xB3C4; &#xB428;.</strong></p>
+<pre><code class="lang-shell">$ git push --delete {remote} {branch}
+</code></pre>
+<p>&#xC6D0;&#xACA9; &#xBE0C;&#xB79C;&#xCE58;&#xB97C; &#xB85C;&#xCEEC;&#xB85C; checkout&#xD55C; &#xD6C4; &#xC6D0;&#xACA9;&#xBE0C;&#xB79C;&#xCE58;&#xC5D0;&#xC11C; &#xCCB4;&#xD06C;&#xC544;&#xC6C3;&#xD55C; &#xB85C;&#xCEEC;&#xBE0C;&#xB79C;&#xCE58;&#xB97C; &#xC544;&#xB798; &#xBA85;&#xB839;&#xC5B4;&#xB85C; &#xC0AD;&#xC81C;&#xD558;&#xBA74; &#xB41C;&#xB2E4;.</p>
+<pre><code class="lang-shell">$ git co {branch_name} origin/{branch_name}
+$ git push origin --delete {branch_name}
+</code></pre>
+<h2 id="&#xB9AC;&#xBAA8;&#xD2B8;-&#xC800;&#xC7A5;&#xC18C;-&#xCD94;&#xAC00;">&#xB9AC;&#xBAA8;&#xD2B8; &#xC800;&#xC7A5;&#xC18C; &#xCD94;&#xAC00;</h2>
+<p>&#xC6D0;&#xD558;&#xB294; &#xB514;&#xB809;&#xD1A0;&#xB9AC;&#xC5D0;&#xC11C; git init &#xD6C4;</p>
+<pre><code class="lang-shell">$ git remote add origin {remote_name}
+$ git fetch # &#xB9AC;&#xBAA8;&#xD2B8; &#xC800;&#xC7A5;&#xC18C;&#xC758; &#xD30C;&#xC77C;, &#xBE0C;&#xB79C;&#xCE58; &#xB4F1;&#xC744; &#xAC00;&#xC838;&#xC628;&#xB2E4;.
+</code></pre>
+<h2 id="tag">tag</h2>
+<p>tag &#xCD94;&#xAC00; &#xD6C4; <code>git push {remote} {tag}</code></p>
+<h3 id="annotated-tag">Annotated tag</h3>
+<pre><code class="lang-shell">$ git tag -a v1.4 -m &apos;my version 1.4&apos;
+</code></pre>
+<h3 id="lightweight-tag">Lightweight tag</h3>
+<pre><code class="lang-shell">$ git tag v1.4-lw
+</code></pre>
+<h2 id="&#xC5EC;&#xB7EC;&#xC904;&#xB85C;-commit">&#xC5EC;&#xB7EC;&#xC904;&#xB85C; Commit</h2>
+<ol>
+<li>VSCode&#xAC19;&#xC740; &#xC5D0;&#xB514;&#xD130; &#xC774;&#xC6A9;&#xD558;&#xAC70;&#xB098;</li>
+<li>&#xBA85;&#xB839;&#xC904;&#xC5D0;&#xC11C; &quot;&#xB97C; &#xC2DC;&#xC791;&#xD558;&#xACE0; &#xB2EB;&#xC9C0; &#xC54A;&#xACE0; &#xC5D4;&#xD130;&#xC785;&#xB825;</li>
+</ol>
+<pre><code>$ git commit -m &quot;
+&gt; Commit
+&gt; OK
+&gt; &quot;
+</code></pre><h2 id="log">Log</h2>
+<p><a href="https://git-scm.com/book/ko/v1/Git-&#xB3C4;&#xAD6C;-&#xD788;&#xC2A4;&#xD1A0;&#xB9AC;-&#xB2E8;&#xC7A5;&#xD558;&#xAE30;" target="_blank">6.4 Git &#xB3C4;&#xAD6C; - &#xD788;&#xC2A4;&#xD1A0;&#xB9AC; &#xB2E8;&#xC7A5;&#xD558;&#xAE30;</a></p>
+<h3 id="&#xB9C8;&#xC9C0;&#xB9C9;-&#xCEE4;&#xBC0B;-&#xC218;&#xC815;">&#xB9C8;&#xC9C0;&#xB9C9; &#xCEE4;&#xBC0B; &#xC218;&#xC815;</h3>
+<p>&#xC790;&#xB3D9;&#xC73C;&#xB85C; &#xD14D;&#xC2A4;&#xD2B8; &#xD3B8;&#xC9D1;&#xAE30; &#xC2E4;&#xD589;&#xB428;.</p>
+<pre><code class="lang-shell">$ git commit --amend
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="alias.html" class="navigation navigation-prev " aria-label="Previous page: Alias">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="commit-convention.html" class="navigation navigation-next " aria-label="Next page: Commit Convention">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Command & Tip","level":"2.2","depth":1,"next":{"title":"Commit Convention","level":"2.3","depth":1,"path":"git/commit-convention.md","ref":"git/commit-convention.md","articles":[]},"previous":{"title":"Alias","level":"2.1","depth":1,"path":"git/alias.md","ref":"git/alias.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Taesu Hyeon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TIL","language":"kr, en","gitbook":"*","description":"Today I Learned"},"file":{"path":"git/command&tip.md","mtime":"2017-09-13T00:11:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-14T23:42:02.347Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
