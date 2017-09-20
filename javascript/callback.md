@@ -1,6 +1,7 @@
 # Callback
 
-## 이슈
+## Issue
+[jQueryUI - Dialog - Modal form](https://jqueryui.com/dialog/#modal-form) 구현 부분
 
 ```javascript
 buttons: [
@@ -10,7 +11,7 @@ buttons: [
             },
 ```
 
-## 해결
+## Resolve
 
 ```javascript
 buttons: [
@@ -22,6 +23,6 @@ buttons: [
             },
 ```
 
-## 결론
+## Conclusion
 
 Callback 패턴으로 부르지 않으면 해당 라인에서 그냥 실행되어 버리고 callback에 등록하면 call이 오는 순간까지 기다림.

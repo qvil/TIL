@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Alias · TIL</title>
+        <title>React · TIL</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,7 +57,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="command&tip.html" />
+    <link rel="next" href="frequent-mistakes/" />
     
     
     <link rel="prev" href="../" />
@@ -87,8 +87,6 @@
 
     
         
-        <li class="header">TIL</li>
-        
         
     
         <li class="chapter " data-level="1.1" data-path="../">
@@ -96,7 +94,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    TIL
             
                 </a>
             
@@ -104,45 +102,40 @@
             
         </li>
     
-
-    
-        
-        <li class="header">Git</li>
-        
-        
-    
-        <li class="chapter active" data-level="2.1" data-path="alias.html">
+        <li class="chapter active" data-level="1.2" data-path="./">
             
-                <a href="alias.html">
+                <a href="./">
             
                     
-                    Alias
+                    React
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="2.2" data-path="command&tip.html">
+        <li class="chapter " data-level="1.2.1" data-path="frequent-mistakes/">
             
-                <a href="command&tip.html">
+                <a href="frequent-mistakes/">
             
                     
-                    Command & Tip
+                    자주하는 실수
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="2.3" data-path="commit-convention.html">
+        <li class="chapter " data-level="1.2.1.1" data-path="frequent-mistakes/handling-events.html">
             
-                <a href="commit-convention.html">
+                <a href="frequent-mistakes/handling-events.html">
             
                     
-                    Commit Convention
+                    Handling Events
             
                 </a>
             
@@ -150,27 +143,31 @@
             
         </li>
     
-        <li class="chapter " data-level="2.4" data-path="ssh.html">
+
+            </ul>
             
-                <a href="ssh.html">
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../javascript/">
+            
+                <a href="../javascript/">
             
                     
-                    SSH
+                    Javascript
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-
-    
-        
-        <li class="header">Javascript</li>
-        
-        
-    
-        <li class="chapter " data-level="3.1" data-path="../javascript/callback.html">
+        <li class="chapter " data-level="1.3.1" data-path="../javascript/callback.html">
             
                 <a href="../javascript/callback.html">
             
@@ -183,12 +180,30 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../javascript/curring.html">
+        <li class="chapter " data-level="1.3.2" data-path="../javascript/curring.html">
             
                 <a href="../javascript/curring.html">
             
                     
                     Curring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    GLOSSARY
             
                 </a>
             
@@ -226,7 +241,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Alias</a>
+        <a href=".." >React</a>
     </h1>
 </div>
 
@@ -241,38 +256,17 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="alias">Alias</h1>
-<blockquote>
-<p>~/.gitconfig &#xD30C;&#xC77C;&#xC744; &#xC218;&#xC815;&#xD558;&#xBA74; &#xCEF4;&#xD4E8;&#xD130; &#xC804;&#xCCB4;&#xC758; git&#xC5D0; &#xC801;&#xC6A9;&#xB428; (~/ &#x21D0; HomeDirectory)</p>
-</blockquote>
-<p>&#xC544;&#xB798; &#xCF54;&#xB4DC;&#xB97C; .gitconfig&#xC5D0; &#xBD99;&#xC5EC; &#xB123;&#xB294;&#xB2E4;. </p>
-<pre><code>[alias]
-lg1 = log --graph --abbrev-commit --decorate --format=format:&apos;%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)&apos; --all
-lg2 = log --graph --abbrev-commit --decorate --format=format:&apos;%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n&apos;&apos;          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)&apos; --all
-lg = !&quot;git lg1 -10&quot;
+                                <h2 id="table-of-content">Table of Content</h2>
+<ul>
+<li><a href="./">React</a><ul>
+<li><a href="frequent-mistakes/">&#xC790;&#xC8FC;&#xD558;&#xB294; &#xC2E4;&#xC218;</a><ul>
+<li><a href="frequent-mistakes/handling-events.html">Handling Events</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
-co = checkout
-br = branch
-ci = commit
-st = status
-unstage = reset HEAD --
-last = log -1 HEAD
-        tlg = log --graph --abbrev-commit --decorate --date=relative --format=format:&apos;%C(bold red)%h%C(reset) : %C(bold green)(%ar)%C(reset) - %C(cyan)\\&lt;%an\\&gt;%C(reset)%C(bold yellow)%d%C(reset)%n%n%w(90,1,2)%C(white)%B%C(reset)%n&apos;
-[user]
-        email = qvil1127@gmail.com
-        name = tshyeon
-</code></pre><p>&#xCEE4;&#xB9E8;&#xB4DC; &#xB77C;&#xC778;&#xC5D0; &#xC785;&#xB825;</p>
-<pre><code>$ git config --global alias.tlg &quot;log --graph --abbrev-commit --decorate --date=relative --format=format:&apos;%C(bold red)%h%C(reset) : %C(bold green)(%ar)%C(reset) - %C(cyan)\&lt;%an\&gt;%C(reset)%C(bold yellow)%d%C(reset)%n%n%w(90,1,2)%C(white)%B%C(reset)%n&apos;&quot;
-</code></pre><pre><code>git lg &#xC758; -10&#xC635;&#xC158; 10&#xC904; 
-git lg1 &#xB610;&#xB294; lg2&#xB85C; log&#xBA85;&#xB839;&#xC744; &#xB300;&#xC2E0;&#xD55C;&#xB2E4;.
-git co &#xB85C; checkout&#xBA85;&#xB839;&#xC744; &#xB300;&#xC2E0;&#xD55C;&#xB2E4;.
-git br &#xB85C; branch&#xBA85;&#xB839;&#xC744; &#xB300;&#xC2E0;&#xD55C;&#xB2E4;.
-git ci &#xB85C; commit&#xBA85;&#xB839;&#xC744; &#xB300;&#xC2E0;&#xD55C;&#xB2E4;.
-git st &#xB85C; status&#xBA85;&#xB839;&#xC744; &#xB300;&#xC2E0;&#xD55C;&#xB2E4;.
-git unstage &#xB85C; reset HEAD &#x2013;&#xBA85;&#xB839;&#xC744; &#xB300;&#xC2E0;&#xD55C;&#xB2E4;.
-git last &#xB85C; log -1 HEAD&#xBA85;&#xB839;&#xC744; &#xB300;&#xC2E0;&#xD55C;&#xB2E4;.
-git tlg &#xB124;&#xC774;&#xBC84;(toast meetup)&#xC5D0;&#xC11C; &#xBCF8; log alias
-</code></pre>
                                 
                                 </section>
                             
@@ -299,12 +293,12 @@ git tlg &#xB124;&#xC774;&#xBC84;(toast meetup)&#xC5D0;&#xC11C; &#xBCF8; log alia
 
             
                 
-                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: TIL">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="command&tip.html" class="navigation navigation-next " aria-label="Next page: Command & Tip">
+                <a href="frequent-mistakes/" class="navigation navigation-next " aria-label="Next page: 자주하는 실수">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -315,7 +309,7 @@ git tlg &#xB124;&#xC774;&#xBC84;(toast meetup)&#xC5D0;&#xC11C; &#xBCF8; log alia
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Alias","level":"2.1","depth":1,"next":{"title":"Command & Tip","level":"2.2","depth":1,"path":"git/command&tip.md","ref":"git/command&tip.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Taesu Hyeon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TIL","language":"kr, en","gitbook":"*","description":"Today I Learned"},"file":{"path":"git/alias.md","mtime":"2017-09-13T00:11:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-14T23:42:02.347Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"React","level":"1.2","depth":1,"next":{"title":"자주하는 실수","level":"1.2.1","depth":2,"path":"react/frequent-mistakes/README.md","ref":"react/frequent-mistakes/README.md","articles":[{"title":"Handling Events","level":"1.2.1.1","depth":3,"path":"react/frequent-mistakes/handling-events.md","ref":"react/frequent-mistakes/handling-events.md","articles":[]}]},"previous":{"title":"TIL","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Taesu Hyeon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TIL","language":"kr, en","gitbook":"*","description":"Today I Learned"},"file":{"path":"react/README.md","mtime":"2017-09-20T23:53:35.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-20T07:36:16.383Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>SSH · TIL</title>
+        <title>Javascript · TIL</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../javascript/callback.html" />
+    <link rel="next" href="callback.html" />
     
     
-    <link rel="prev" href="commit-convention.html" />
+    <link rel="prev" href="../react/frequent-mistakes/handling-events.html" />
     
 
     </head>
@@ -87,8 +87,6 @@
 
     
         
-        <li class="header">TIL</li>
-        
         
     
         <li class="chapter " data-level="1.1" data-path="../">
@@ -96,7 +94,7 @@
                 <a href="../">
             
                     
-                    Introduction
+                    TIL
             
                 </a>
             
@@ -104,45 +102,40 @@
             
         </li>
     
-
-    
-        
-        <li class="header">Git</li>
-        
-        
-    
-        <li class="chapter " data-level="2.1" data-path="alias.html">
+        <li class="chapter " data-level="1.2" data-path="../react/">
             
-                <a href="alias.html">
+                <a href="../react/">
             
                     
-                    Alias
+                    React
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="2.2" data-path="command&tip.html">
+        <li class="chapter " data-level="1.2.1" data-path="../react/frequent-mistakes/">
             
-                <a href="command&tip.html">
+                <a href="../react/frequent-mistakes/">
             
                     
-                    Command & Tip
+                    자주하는 실수
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="2.3" data-path="commit-convention.html">
+        <li class="chapter " data-level="1.2.1.1" data-path="../react/frequent-mistakes/handling-events.html">
             
-                <a href="commit-convention.html">
+                <a href="../react/frequent-mistakes/handling-events.html">
             
                     
-                    Commit Convention
+                    Handling Events
             
                 </a>
             
@@ -150,29 +143,33 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.4" data-path="ssh.html">
+
+            </ul>
             
-                <a href="ssh.html">
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
             
                     
-                    SSH
+                    Javascript
             
                 </a>
             
 
             
-        </li>
+            <ul class="articles">
+                
     
-
-    
-        
-        <li class="header">Javascript</li>
-        
-        
-    
-        <li class="chapter " data-level="3.1" data-path="../javascript/callback.html">
+        <li class="chapter " data-level="1.3.1" data-path="callback.html">
             
-                <a href="../javascript/callback.html">
+                <a href="callback.html">
             
                     
                     Callback
@@ -183,12 +180,30 @@
             
         </li>
     
-        <li class="chapter " data-level="3.2" data-path="../javascript/curring.html">
+        <li class="chapter " data-level="1.3.2" data-path="curring.html">
             
-                <a href="../javascript/curring.html">
+                <a href="curring.html">
             
                     
                     Curring
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../GLOSSARY.html">
+            
+                <a href="../GLOSSARY.html">
+            
+                    
+                    GLOSSARY
             
                 </a>
             
@@ -226,7 +241,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >SSH</a>
+        <a href=".." >Javascript</a>
     </h1>
 </div>
 
@@ -241,27 +256,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="ssh">SSH</h1>
-<h2 id="github-username-password-&#xC5C6;&#xC774;-ssh-key&#xB85C;-push&#xD558;&#xAE30;">github username, password &#xC5C6;&#xC774; ssh key&#xB85C; push&#xD558;&#xAE30;</h2>
-<h3 id="ssh-key-&#xC0DD;&#xC131;">SSH Key &#xC0DD;&#xC131;</h3>
-<pre><code class="lang-shell">ssh-keygen -t rsa -b 4096 -C &quot;{email}&quot; # github manual
-ssh-keygen # &#xC774;&#xAC83;&#xB3C4; &#xB418;&#xB294; &#xAC83; &#xD655;&#xC778;.
-</code></pre>
-<p>passphrase &#xC785;&#xB825; &#xC548;&#xD558;&#xACE0; enter&#xD558;&#xBA74; push &#xD560; &#xB54C; &#xB9C8;&#xB2E4; &#xBE44;&#xBC00;&#xBC88;&#xD638; &#xC785;&#xB825; &#xC548;&#xD574;&#xB3C4; &#xB428;.</p>
-<pre><code>Enter a file in which to save the key (/Users/you/.ssh/id_rsa): [Press enter]
-Enter passphrase (empty for no passphrase): [Type a passphrase]
-Enter same passphrase again: [Type passphrase again]
-</code></pre><h3 id="github&#xC5D0;-sshkey-&#xB4F1;&#xB85D;">github&#xC5D0; sshkey &#xB4F1;&#xB85D;</h3>
-<pre><code>id_rsa.pub &#xAC12;&#xC744; github &#xAD00;&#xB9AC;&#xC790;&#xC5D0;&#xAC8C; &#xC804;&#xB2EC;&#xD558;&#xAC70;&#xB098; &#xBCF8;&#xC778;&#xC774; &#xB4F1;&#xB85D;
-github&#xD398;&#xC774;&#xC9C0;&#xC758; Settings -&gt; SSH Key -&gt; New SSH Key -&gt; Key &#xD56D;&#xBAA9;&#xC5D0; id_rsa.pub &#xAC12; &#xBCF5;&#xC0AC;
-</code></pre><h3 id="github-remote-&#xC800;&#xC7A5;&#xC18C;&#xC5D0;-ssh-&#xC0AC;&#xC6A9;-url-add&#xD558;&#xAC70;&#xB098;-clone">github remote &#xC800;&#xC7A5;&#xC18C;&#xC5D0; ssh &#xC0AC;&#xC6A9; url add&#xD558;&#xAC70;&#xB098; clone</h3>
-<p><code>git@github.com:{id}/{project}.git</code></p>
-<pre><code class="lang-shell">git remote add {name} git@github.com:{id}/{project}.git
-git clone git@github.com:{id}/{project}.git
-</code></pre>
-<h3 id="&#xCC38;&#xACE0;">&#xCC38;&#xACE0;</h3>
+                                <h2 id="table-of-content">Table of Content</h2>
 <ul>
-<li><a href="https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/" target="_blank">Generating a new SSH key and adding it to the ssh-agent</a></li>
+<li><a href="./">Javascript</a>  <!-- - [자주하는 실수](/react/frequent-mistakes/README.md) -->
+<ul>
+<li><a href="javascript/callback.md">Callback</a></li>
+<li><a href="javascript/curring.md">Curring</a></li>
+</ul>
+</li>
 </ul>
 
                                 
@@ -290,12 +292,12 @@ git clone git@github.com:{id}/{project}.git
 
             
                 
-                <a href="commit-convention.html" class="navigation navigation-prev " aria-label="Previous page: Commit Convention">
+                <a href="../react/frequent-mistakes/handling-events.html" class="navigation navigation-prev " aria-label="Previous page: Handling Events">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../javascript/callback.html" class="navigation navigation-next " aria-label="Next page: Callback">
+                <a href="callback.html" class="navigation navigation-next " aria-label="Next page: Callback">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -306,7 +308,7 @@ git clone git@github.com:{id}/{project}.git
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"SSH","level":"2.4","depth":1,"next":{"title":"Callback","level":"3.1","depth":1,"path":"javascript/callback.md","ref":"javascript/callback.md","articles":[]},"previous":{"title":"Commit Convention","level":"2.3","depth":1,"path":"git/commit-convention.md","ref":"git/commit-convention.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Taesu Hyeon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TIL","language":"kr, en","gitbook":"*","description":"Today I Learned"},"file":{"path":"git/ssh.md","mtime":"2017-09-13T00:11:36.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-14T23:42:02.347Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Javascript","level":"1.3","depth":1,"next":{"title":"Callback","level":"1.3.1","depth":2,"path":"javascript/callback.md","ref":"javascript/callback.md","articles":[]},"previous":{"title":"Handling Events","level":"1.2.1.1","depth":3,"path":"react/frequent-mistakes/handling-events.md","ref":"react/frequent-mistakes/handling-events.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Taesu Hyeon","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"TIL","language":"kr, en","gitbook":"*","description":"Today I Learned"},"file":{"path":"javascript/README.md","mtime":"2017-09-20T23:31:45.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2017-09-20T07:36:16.383Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

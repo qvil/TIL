@@ -1,9 +1,16 @@
 # Curring
 
-## 정의
+## Definition
 >수학자 하스켈 커리(Haskell Curry)로부터 유래됨.
 
-## 예제
+## Example
+
+### ES6
+```js
+const add = x => y => x + y;
+```
+
+### ES5
 ```js
 function add(x, y) {
     if (typeof y === "undefined") {
@@ -16,8 +23,8 @@ function add(x, y) {
 }
 ```
 
-## 실행
+## Execution
 ```js
-add(2, 3); // 5
+add(2)(3); // 5
 add(2)(3); // 5
 ```
